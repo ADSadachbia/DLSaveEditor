@@ -2016,6 +2016,9 @@ public class JsonUtils {
         addTalisman("grimnir", 1914, 1939, 1966, 1); //"Passive Damage Stacking"
         //credit: Klaus
         addTalisman("delphi", 456, 457, 747, 3); //negative str
+        //Credits: NSS Prince
+        addTalisman ("gleon", 330000108, 110070007, 1605, 1); //Mommy issues machinegun
+        addTalisman ("Yukimura", 330000555, 1458, 330000555, 1); //MonkeyMachineGun
     }
 
     //Logs
