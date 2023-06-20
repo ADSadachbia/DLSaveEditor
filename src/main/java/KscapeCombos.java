@@ -20,7 +20,7 @@ public class KscapeCombos {
 
     public static String[] FLAME = {
             "Suave Lithomancer", "Leader of the Horse Clan", "Summertime Mouse", "The Blazewolf", "Encouraging Cheerleader",
-            "Shimmering Guardian", "Leader of the Ox Clan", "Twin Wings of Freedom", "Blessed Alchemist"
+            "Shimmering Guardian", "Leader of the Ox Clan", "Twin Wings of Freedom", "Lord of the New Path"
     };
 
     public static String[] WATER = {
