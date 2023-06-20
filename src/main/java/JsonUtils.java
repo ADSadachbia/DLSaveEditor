@@ -1844,6 +1844,10 @@ public class JsonUtils {
         addHackedUnit(19900005);
     }
 
+    public void addGunnerCleo(){
+        addHackedUnit(99900009); //Gunner Cleo
+    }
+
     public void addOthers(){ //this shouldn't be used tbh
         addNotteAndDog();
         addStoryNPCs();
@@ -1861,10 +1865,6 @@ public class JsonUtils {
         for(int i = 0; i < 67; i++){
             addHackedUnit(19100001 + i);
         }
-    }
-
-    public void addGunnerCleo(){
-        addHackedUnit(99900009); //Gunner Cleo
     }
 
     public void addABR3Stars(){
@@ -1994,28 +1994,28 @@ public class JsonUtils {
     }
 
     public void addGoofyKscapes() {
-        addTalisman("xander", 806, 805, 721, 4); //(Water) Skill Recharge +65%, Skill Prep +100%
-        addTalisman("gatov", 100100205, 1237, 100100204, 4); //ar20 + flame ar20 + ar10
-        addTalisman("syasu", 100100205, 1225, 100100204, 4); //ar20 + hp70 ar10 + ar10
+        addTalisman("xander", 805, 806, 721, 4); //(Water) Skill Recharge +65%, Skill Prep +100%
+        addTalisman("gatov", 100100204, 100100205, 1237, 4); //ar10 + ar20 + flame ar20 
+        addTalisman("syasu", 100100204, 100100205, 1225, 4); //ar10 + ar20 + hp70 ar20
         addTalisman("ranzal", 2172, 2175, 721, 4); //bolk
         addTalisman("alia", 1237, 400000822, 400000821, 1); //dyilia
-        addTalisman("valyx", 2664, 875, 721, 2); //valyx
+        addTalisman("valyx", 2664, 871, 721, 2); //valyx
         addTalisman("emile", 2579, 2578, 806, 2); //emile
         addTalisman("klaus", 2735, 42960, 721, 1); //ned
         addTalisman("marth", 927, 929, 934, 1); //triple Last (buffer)
         addTalisman("sharena", 902, 746, 934, 1); //triple last (dmg)
         //credit: sinkarth
-        addTalisman("galex", 340000132, 934, 291, 1); //"Galex Mega Fod"
+        addTalisman("galex", 291, 340000132, 934, 1); //"Galex Mega Fod"
         addTalisman("grace", 340000070, 340000134, 927, 1); //"Grace Last Boost"
         addTalisman("xainfried", 2735, 3701, 43160, 1); //"Super Dragon Time"
-        addTalisman("yaten", 2664, 2263, 871, 1); //"Energized Boost"
-        addTalisman("nino", 340000132, 100100205, 924, 1); //"I tried to fix Nino"
-        addTalisman("alia", 2041, 1447, 2045, 1); //"Infinite Critical Damage"
+        addTalisman("yaten", 2663, 2264, 871, 1); //"Energized Boost"
+        addTalisman("nino", 100100205, 340000132, 924, 1); //"I tried to fix Nino"
+        addTalisman("alia", 2045, 2041, 1447, 1); //"Infinite Critical Damage"
         addTalisman("ao", 340000030, 340000132, 827, 1); //"Better Mars"
         addTalisman("dynef", 1620, 2281, 1440, 1); //"Flurry Freezer & other combo effects"
         addTalisman("grimnir", 1914, 1939, 1966, 1); //"Passive Damage Stacking"
         //credit: Klaus
-        addTalisman("delphi", 747, 457, 456, 3); //negative str
+        addTalisman("delphi", 456, 457, 747, 3); //negative str
     }
 
     //Logs
