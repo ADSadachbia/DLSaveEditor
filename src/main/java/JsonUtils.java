@@ -1363,7 +1363,7 @@ public class JsonUtils {
                         dragonBond.addProperty("dragon_id", id);
                         dragonBond.addProperty("gettime", Instant.now().getEpochSecond());
                         dragonBond.addProperty("reliability_level", 30);
-                        dragonBond.addProperty("reliability_total_exp", 0);
+                        dragonBond.addProperty("reliability_total_exp", 36300);
                         dragonBond.addProperty("last_contact_time", Instant.now().getEpochSecond());
                         getField("data", "dragon_reliability_list").getAsJsonArray().add(dragonBond);
                     }
