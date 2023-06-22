@@ -637,8 +637,8 @@ public class JsonUtils {
             out.addProperty("talisman_ability_id_1", id1);
             out.addProperty("talisman_ability_id_2", id2);
             out.addProperty("talisman_ability_id_3", id3);
-            out.addProperty("additional_hp", 0);
-            out.addProperty("additional_attack", 0);
+            out.addProperty("additional_hp", 100);
+            out.addProperty("additional_attack", 100);
             out.addProperty("gettime", Instant.now().getEpochSecond());
 
             getFieldAsJsonArray("data", "talisman_list").add(out);
@@ -672,8 +672,8 @@ public class JsonUtils {
         out.addProperty("talisman_ability_id_1", abilityId1);
         out.addProperty("talisman_ability_id_2", abilityId2);
         out.addProperty("talisman_ability_id_3", abilityId3);
-        out.addProperty("additional_hp", 0);
-        out.addProperty("additional_attack", 0);
+        out.addProperty("additional_hp", 100);
+        out.addProperty("additional_attack", 100);
         out.addProperty("gettime", Instant.now().getEpochSecond());
 
         return out;
@@ -690,8 +690,8 @@ public class JsonUtils {
         out.addProperty("talisman_ability_id_1", abilitiesList.get(rng.nextInt(totalAbilitiesCount)).getAsJsonObject().get("Id").getAsInt());
         out.addProperty("talisman_ability_id_2", abilitiesList.get(rng.nextInt(totalAbilitiesCount)).getAsJsonObject().get("Id").getAsInt());
         out.addProperty("talisman_ability_id_3", abilitiesList.get(rng.nextInt(totalAbilitiesCount)).getAsJsonObject().get("Id").getAsInt());
-        out.addProperty("additional_hp", 0);
-        out.addProperty("additional_attack", 0);
+        out.addProperty("additional_hp", 100);
+        out.addProperty("additional_attack", 100);
         out.addProperty("gettime", Instant.now().getEpochSecond());
 
         return out;
@@ -1362,7 +1362,7 @@ public class JsonUtils {
                         JsonObject dragonBond = new JsonObject();
                         dragonBond.addProperty("dragon_id", id);
                         dragonBond.addProperty("gettime", Instant.now().getEpochSecond());
-                        dragonBond.addProperty("reliability_level", 1);
+                        dragonBond.addProperty("reliability_level", 30);
                         dragonBond.addProperty("reliability_total_exp", 0);
                         dragonBond.addProperty("last_contact_time", Instant.now().getEpochSecond());
                         getField("data", "dragon_reliability_list").getAsJsonArray().add(dragonBond);
@@ -1848,13 +1848,6 @@ public class JsonUtils {
         addHackedUnit(99900009); //Gunner Cleo
     }
 
-    public void addOthers(){ //this shouldn't be used tbh
-        addNotteAndDog();
-        addStoryNPCs();
-        addABR3Stars();
-        addUnplayableDragons();
-    }
-
     public void addNotteAndDog(){
         addHackedUnit(19900003); //Yellow Notte
         addHackedUnit(19900004); //Puppy
@@ -1865,6 +1858,13 @@ public class JsonUtils {
         for(int i = 0; i < 67; i++){
             addHackedUnit(19100001 + i);
         }
+    }
+
+    public void addOthers(){ //this shouldn't be used tbh
+        addNotteAndDog();
+        addStoryNPCs();
+        addABR3Stars();
+        addUnplayableDragons();
     }
 
     public void addABR3Stars(){
